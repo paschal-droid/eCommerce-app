@@ -1,0 +1,74 @@
+:root {
+  --teal: rgb(0, 161, 157);
+  --coral: rgb(224, 93, 93);
+  --happy-white: #FFF8E5;
+  --sun-yellow: rgb(255, 180, 66);
+  --purple: rgb(84, 46, 113);
+  --kink-red: rgb(251, 54, 64);
+  --violet: rgb(167, 153, 183);
+  --light-yellow: rgb(253, 202, 64);
+  --lamp-black: rgb(35, 31, 32);
+  --clr: #d1cfc8;
+  --font-text: 'Montserrat';
+  --font-text2: "Lobster"
+}
+
+
+.gradient-text  {
+
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(90deg, #542E71 12%, #FB3640 53%, #00A19D 73%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(90deg, #542E71 12%, #FB3640 53%, #00A19D 73%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(90deg, #542E71 12%, #FB3640 53%, #00A19D 73%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00A19D', endColorstr='#542E71', GradientType=0 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(90deg, #542E71 12%, #FB3640 53%, #00A19D 73%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(90deg, #542E71 12%, #FB3640 53%, #00A19D 73%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+.tilt-in-tr {
+	-webkit-animation: tilt-in-tr 0.65s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-tr 0.65s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes tilt-in-tr {
+    0% {
+      -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg);
+              transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes tilt-in-tr {
+    0% {
+      -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg);
+              transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+      opacity: 1;
+    }
+  }
+  
